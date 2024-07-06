@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Serenity's Weather App
+
+This weather app displays current weather conditions with dynamic weather icons.
+
+## Credits
+- Weather icons provided by [OpenWeatherMap](https://openweathermap.org/weather-conditions) or [Weather Icons](https://erikflowers.github.io/weather-icons/).
