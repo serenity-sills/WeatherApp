@@ -1,5 +1,3 @@
-// src/getWeatherIcon.js
-
 const weatherIcons = {
   Clear: {
     day: '01d.png',

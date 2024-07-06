@@ -1,5 +1,3 @@
-// src/components/Logo.js
-
 import React from 'react';
 
 const Logo = () => (

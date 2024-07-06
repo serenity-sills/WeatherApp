@@ -1,18 +1,18 @@
-// src/components/SearchBar.js
-
 import React, { useState } from 'react';
 
 const SearchBar = ({ onSearch }) => {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(''); // Keeps track of what the user is searching
 
+  // Function to handle search submission
   const handleSearch = (event) => {
-    event.preventDefault();
-    if (query) {
-      onSearch(query);
+    event.preventDefault(); // Stops the form from submitting in its usual way
+    if (query.trim()) {
+      onSearch(query.trim()); // Sends the cleaned-up search term to the parent component's search function
       setQuery(''); // Clear the input field after search
     }
   };
 
+  // This shows the search bar where users can input a location
   return (
     <form onSubmit={handleSearch} className="search-bar">
       <input

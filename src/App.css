@@ -1,7 +1,3 @@
-/* App.css */
-
-/* Existing styles */
-
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -95,9 +91,12 @@ button:hover {
   font-style: italic;
 }
 
+/* Adjusted logo styles */
+.logo {
+  margin-bottom: 20px; /* Ensure space below logo */
+}
 
 .logo img {
-
-  max-width: 25%;
-  height: auto;
+  max-width: 25%; /* Adjust logo size */
+  height: auto; /* Maintain aspect ratio */
 }
