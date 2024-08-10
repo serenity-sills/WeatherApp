@@ -1,0 +1,143 @@
+.weather {
+    place-self: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: #E3F9E5; /* Original background color */
+    border: 1px solid #D1D1D1;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-out;
+    max-width: 400px; /* Limit the width for a more compact look */
+}
+
+/* Animation for the weather container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Animation for the search bar */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.search-bar input {
+    height: 45px;
+    border: 2px solid #2C6C5A; /* Original border color */
+    border-radius: 25px;
+    padding-left: 20px;
+    color: #626262; /* Original text color */
+    background: #E3F9E5; /* Original background color */
+    font-size: 16px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+    background: #C5E1C1; /* Light green for focus */
+    border-color: #2C6C5A; /* Original border color */
+}
+
+.search-bar img {
+    width: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #A0D6A8; /* Lighter background color */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.search-bar img:hover {
+    background: #C5E1C1; /* Even lighter green for hover */
+    transform: scale(1.1);
+}
+
+.weather-icon {
+    width: 120px;
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+
+.weather-icon:hover {
+    transform: rotate(360deg);
+}
+
+.temperature {
+    color: #2C6C5A; /* Original temperature color */
+    font-size: 70px;
+    line-height: 1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.location {
+    color: #2C6C5A; /* Original location color */
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.weather-data {
+    width: 100%;
+    margin-top: 30px;
+    background: #2C6C5A; /* Darker background color */
+    color: #E3F9E5; /* Light text color for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+.weather-data .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    background: #A0D6A8; /* Lighter background for individual data cards */
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.weather-data .col:hover {
+    transform: scale(1.05);
+    background: #C5E1C1; /* Slightly lighter background on hover */
+}
+
+.weather-data .col span {
+    display: block;
+    font-size: 14px;
+}
+
+.weather-data .col img {
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+.weather-data .col img:hover {
+    transform: rotate(360deg);
+}
